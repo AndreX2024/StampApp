@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">StampApp</string>
+    <string name="my_name">Carlos Andrés Castaño Gaitán</string>
+    <string name="sign_up_google">Ingresar con Google</string>
+    <string name="recover_your_password">Recupera Tu Contraseña</string>
+    <string name="login">Regístrate!</string>
+    <string name="start">Comienza</string>
+    <string name="have_account">No tienes cuenta?</string>
+    <string name="sign_up">Ingresar</string>
+    <string name="home_text">Inicia una nueva aventura con StampApp y descubre una nueva forma de ver el mundo.</string>
+    <string name="login_text">La aventura está por iniciar, por favor inicia sesión</string>
+</resources>
