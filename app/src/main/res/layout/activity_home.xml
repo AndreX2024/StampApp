@@ -6,11 +6,11 @@
     android:layout_height="match_parent"
     android:background="@color/blue">
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/b_start"
         style="@style/ButtonRounded"
-        android:layout_width="199dp"
-        android:layout_height="48dp"
+        android:layout_width="214dp"
+        android:layout_height="57dp"
         android:layout_marginTop="48dp"
         android:fontFamily="@font/annapurna_sil"
         android:gravity="center"
