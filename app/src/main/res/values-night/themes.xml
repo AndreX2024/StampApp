@@ -3,9 +3,5 @@
     <style name="Base.Theme.TallerDN6A" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
-        <item name="colorPrimary">@color/white</item>
-        <item name="colorSecondary">@color/dark_blue</item>
-
-        <item name="buttonStyle">@style/ButtonRounded</item>
     </style>
 </resources>

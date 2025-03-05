@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        style="@style/ImageProfile"
+        android:layout_width="198dp"
+        android:layout_height="192dp"
+        android:layout_marginBottom="584dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_profile"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/user_profile" />
+
+    <Button
+        android:id="@+id/bt_edit_userData"
+        style="@style/ButtonRounded"
+        android:layout_width="166dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/annapurna_sil"
+        android:includeFontPadding="false"
+        android:text="Editar"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tl_profile" />
+
+    <TextView
+        android:id="@+id/tv_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/angkor"
+        android:text="Bienvenido!"
+        android:textColor="@color/white"
+        android:textSize="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067" />
+
+    <TableLayout
+        android:id="@+id/tl_profile"
+        style="@style/TableStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="44dp"
+        android:divider="?android:attr/dividerVertical"
+        android:padding="16dp"
+        android:showDividers="middle"
+        android:stretchColumns="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <TableRow style="@style/TableRowStyle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/angkor"
+                android:padding="8dp"
+                android:text="Nombre:"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_username_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/annapurna_sil"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+        </TableRow>
+
+        <TableRow style="@style/TableRowStyle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/angkor"
+                android:padding="8dp"
+                android:text="Apellido:"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_userlastname_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/annapurna_sil"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+        </TableRow>
+
+        <TableRow style="@style/TableRowStyle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/angkor"
+                android:padding="8dp"
+                android:text="Correo:"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_email_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/annapurna_sil"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+        </TableRow>
+
+        <TableRow style="@style/TableRowStyle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/angkor"
+                android:padding="8dp"
+                android:text="Teléfono:"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_phone_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/annapurna_sil"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
