@@ -1,4 +1,4 @@
-package com.example.tallerdn6a
+package com.example.tallerdn6a.activities
 
 import android.content.Intent
 import android.content.SharedPreferences
@@ -7,6 +7,8 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.tallerdn6a.R
+import androidx.core.content.edit
 
 class VerifyCodeActivity : AppCompatActivity() {
 
@@ -44,7 +46,7 @@ class VerifyCodeActivity : AppCompatActivity() {
         if (inputCode == savedCode) {
             Toast.makeText(this, "Código correcto. Acceso permitido.", Toast.LENGTH_LONG).show()
 
-            sharedPreferences.edit().remove("Código Recuperación").apply()
+            sharedPreferences.edit() { remove("Código Recuperación") }
 
             val intent = Intent(this,LoginActivity::class.java)
             startActivity(intent)

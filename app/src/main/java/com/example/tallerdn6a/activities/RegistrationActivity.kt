@@ -1,4 +1,4 @@
-package com.example.tallerdn6a
+package com.example.tallerdn6a.activities
 
 import android.content.Intent
 import android.content.SharedPreferences
@@ -10,7 +10,8 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import java.util.prefs.Preferences
+import com.example.tallerdn6a.R
+import androidx.core.content.edit
 
 class RegistrationActivity : AppCompatActivity() {
 
@@ -134,13 +135,13 @@ class RegistrationActivity : AppCompatActivity() {
 
 
     private fun guardarDatos() {
-        val editor = sharedPreferences.edit()
-        editor.putString("Nombres", editText_username.text.toString().trim())
-        editor.putString("Apellidos", editText_userlastname.text.toString().trim())
-        editor.putString("Correo Eléctronico", editText_email.text.toString().trim())
-        editor.putString("Teléfono", editText_phone.text.toString().trim())
-        editor.putString("Contraseña", editText_confirmPassword.text.toString().trim())
-        editor.apply()
+        sharedPreferences.edit() {
+            putString("Nombres", editText_username.text.toString().trim())
+            putString("Apellidos", editText_userlastname.text.toString().trim())
+            putString("Correo Eléctronico", editText_email.text.toString().trim())
+            putString("Teléfono", editText_phone.text.toString().trim())
+            putString("Contraseña", editText_confirmPassword.text.toString().trim())
+        }
 
         Toast.makeText(this, "Registro completado exitosamente!", Toast.LENGTH_SHORT).show()
 

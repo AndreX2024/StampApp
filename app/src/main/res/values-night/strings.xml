@@ -26,7 +26,7 @@
     <string name="carrito">Carrito</string>
     <string name="perfil">Perfil</string>
     <string name="Mensaje_bienvenida">¡Bienvenido a StamApp! Explora nuestras categorías y encuentra lo que necesitas con la mejor calidad y precios increíbles.</string>
-    <string name="informacion_tienda">En StamApp, ofrecemos una amplia variedad de productos en las categorías de Ropa. Nuestra misión es brindarte una experiencia de compra fácil, segura y rápida. ¡Empieza a explorar y encuentra lo mejor para ti!</string>
+    <string name="informacion_tienda">En StamApp, ofrecemos una amplia variedad de productos en las categorías de Electrónica, Ropa, Hogar, Deportes y Accesorios. Nuestra misión es brindarte una experiencia de compra fácil, segura y rápida. ¡Empieza a explorar y encuentra lo mejor para ti!</string>
     <string name="inicio">Inicio</string>
     <string name="editar_perfil">Editar Perfil</string>
     <string name="nombre_perfil">Nombre:</string>
@@ -39,7 +39,6 @@
     <string name="guardar_cambios_perfil">Guardar Cambios</string>
     <string name="placeholder_repetir_contraseña">Repetir Contraseña</string>
     <string name="send_code">Enviar Código</string>
-    <string name="verify_code">Verificar Codigo</string>
     <string name="verificar">Verificar</string>
     <string name="category_accessories">Accesorios</string>
     <string name="category_shoes">Zapatos</string>
@@ -47,6 +46,7 @@
     <string name="category_caps">Gorras</string>
     <string name="category_pants">Pantalones</string>
     <string name="category_t_shirts">Camisetas</string>
+    <string name="categories">Categorías</string>
     <string name="category_product_count"> %1$d productos disponibles</string>
     <string name="agregar_carrito">Añadir al carrito</string>
     <string name="pagar">Pagar</string>
@@ -59,7 +59,6 @@
     <string name="titulo_camiseta3">Camiseta Azul Marino Slim Fit</string>
     <string name="descripcion_camiseta2">Una camiseta blanca con ajuste relajado para cualquier ocasión.</string>
     <string name="precio_camiseta2">$12.99</string>
-    <string name="titulo_camiseta2">Camiseta Blanca Clásica</string>
     <string name="descripcion_camiseta1">Camiseta de algodón suave, perfecta para el uso diario.</string>
     <string name="precio_camiseta1">$14.99</string>
     <string name="sandalias_negras">Sandalias Negras</string>

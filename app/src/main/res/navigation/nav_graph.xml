@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/inicioFragment">
+
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="com.example.tallerdn6a.fragments.InicioFragment"
+        app:defaultNavHost="true"
+        android:label="@string/inicio"/>
+
+    <fragment
+        android:id="@+id/productosFragment"
+        android:name="com.example.tallerdn6a.fragments.ProductosFragment"
+        app:defaultNavHost="true"
+        android:label="@string/productos"/>
+
+    <fragment
+        android:id="@+id/carritoFragment"
+        android:name="com.example.tallerdn6a.fragments.CarritoFragment"
+        app:defaultNavHost="true"
+        android:label="@string/carrito"/>
+
+    <fragment
+        android:id="@+id/categoriasFragment"
+        android:name="com.example.tallerdn6a.fragments.CategoriasFragment"
+        app:defaultNavHost="true"
+        android:label="@string/categorias"/>
+
+    <fragment
+        android:id="@+id/accesoriosFragment"
+        android:name="com.example.tallerdn6a.fragments.AccesoriosFragment"
+        app:defaultNavHost="true"
+        android:label="@string/category_accessories"/>
+
+    <fragment
+        android:id="@+id/camisetasFragment"
+        android:name="com.example.tallerdn6a.fragments.CamisetasFragment"
+        app:defaultNavHost="true"
+        android:label="@string/category_t_shirts"/>
+
+    <fragment
+        android:id="@+id/pantalonesFragment"
+        android:name="com.example.tallerdn6a.fragments.PantalonesFragment"
+        app:defaultNavHost="true"
+        android:label="@string/category_pants"/>
+
+    <fragment
+        android:id="@+id/gorrasFragment"
+        android:name="com.example.tallerdn6a.fragments.GorrasFragment"
+        app:defaultNavHost="true"
+        android:label="@string/category_caps"/>
+
+    <fragment
+        android:id="@+id/zapatosFragment"
+        android:name="com.example.tallerdn6a.fragments.ZapatosFragment"
+        app:defaultNavHost="true"
+        android:label="@string/category_shoes"/>
+
+    <fragment
+        android:id="@+id/chaquetasFragment"
+        android:name="com.example.tallerdn6a.fragments.ChaquetasFragment"
+        app:defaultNavHost="true"
+        android:label="@string/category_t_shirts"/>
+
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="com.example.tallerdn6a.fragments.PerfilFragment"
+        app:defaultNavHost="true"
+        android:label="@string/perfil"/>
+
+    <fragment
+        android:id="@+id/editarPerfilFragment"
+        android:name="com.example.tallerdn6a.fragments.EditarPerfilFragment"
+        app:defaultNavHost="true"
+        android:label="@string/editar_perfil"/>
+
+</navigation>

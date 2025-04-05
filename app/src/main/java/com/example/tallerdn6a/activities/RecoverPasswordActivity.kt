@@ -1,4 +1,4 @@
-package com.example.tallerdn6a
+package com.example.tallerdn6a.activities
 
 import android.content.Intent
 import android.content.SharedPreferences
@@ -8,6 +8,8 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.tallerdn6a.R
+import androidx.core.content.edit
 
 class RecoverPasswordActivity : AppCompatActivity() {
 
@@ -55,9 +57,9 @@ class RecoverPasswordActivity : AppCompatActivity() {
 
             val verificationCode = (1000..9999).random()
 
-            val editor = sharedPreferences.edit()
-            editor.putString("Código Recuperación", verificationCode.toString().trim())
-            editor.apply()
+            sharedPreferences.edit() {
+                putString("Código Recuperación", verificationCode.toString().trim())
+            }
 
             Log.d("RecoverPasswordActivity", "verificarCorreo : Código de recuperación: $verificationCode")
 

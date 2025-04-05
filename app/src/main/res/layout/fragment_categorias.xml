@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tituloCategorias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/angkor"
+            android:paddingBottom="16dp"
+            android:text="@string/categorias"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv_tshirts_category"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                card_view:cardCornerRadius="16dp"
+                card_view:cardElevation="4dp"
+                card_view:strokeColor="@color/dark_blue"
+                card_view:strokeWidth="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:background="@drawable/t_shirts_category"
+                        android:fontFamily="@font/angkor"
+                        android:gravity="center"
+                        android:text="@string/category_t_shirts"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_tshirts_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/annapurna_sil"
+                        android:gravity="center"
+                        android:text="@string/category_product_count"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:padding="8dp"
+                        android:background="@color/white"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv_pants_category"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                card_view:cardCornerRadius="16dp"
+                card_view:cardElevation="4dp"
+                card_view:strokeColor="@color/dark_blue"
+                card_view:strokeWidth="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:fontFamily="@font/angkor"
+                        android:background="@drawable/pants_category"
+                        android:gravity="center"
+                        android:text="@string/category_pants"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_pants_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/annapurna_sil"
+                        android:gravity="center"
+                        android:text="@string/category_product_count"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:padding="8dp"
+                        android:background="@color/white"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv_caps_category"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                card_view:cardCornerRadius="16dp"
+                card_view:cardElevation="4dp"
+                card_view:strokeColor="@color/dark_blue"
+                card_view:strokeWidth="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:fontFamily="@font/angkor"
+                        android:gravity="center"
+                        android:background="@drawable/caps_category"
+                        android:text="@string/category_caps"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_caps_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/annapurna_sil"
+                        android:gravity="center"
+                        android:text="@string/category_product_count"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:padding="8dp"
+                        android:background="@color/white"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv_jackets_category"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                card_view:cardCornerRadius="16dp"
+                card_view:cardElevation="4dp"
+                card_view:strokeColor="@color/dark_blue"
+                card_view:strokeWidth="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:fontFamily="@font/angkor"
+                        android:background="@drawable/jackets_category"
+                        android:gravity="center"
+                        android:text="@string/category_jackets"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_jackets_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/annapurna_sil"
+                        android:gravity="center"
+                        android:text="@string/category_product_count"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:padding="8dp"
+                        android:background="@color/white"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv_shoes_category"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                card_view:cardCornerRadius="16dp"
+                card_view:cardElevation="4dp"
+                card_view:strokeColor="@color/dark_blue"
+                card_view:strokeWidth="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:fontFamily="@font/angkor"
+                        android:background="@drawable/shoes_category"
+                        android:gravity="center"
+                        android:text="@string/category_shoes"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_shoes_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/annapurna_sil"
+                        android:gravity="center"
+                        android:text="@string/category_product_count"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:padding="8dp"
+                        android:background="@color/white"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv_accesories_category"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                card_view:cardCornerRadius="16dp"
+                card_view:cardElevation="4dp"
+                card_view:strokeColor="@color/dark_blue"
+                card_view:strokeWidth="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:fontFamily="@font/angkor"
+                        android:background="@drawable/accesories_category"
+                        android:gravity="center"
+                        android:text="@string/category_accessories"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_accessories_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/annapurna_sil"
+                        android:gravity="center"
+                        android:text="@string/category_product_count"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:padding="8dp"
+                        android:background="@color/white"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

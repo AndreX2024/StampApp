@@ -1,9 +1,10 @@
-package com.example.tallerdn6a
+package com.example.tallerdn6a.activities
 
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.tallerdn6a.R
 
 class ProfileActivity : AppCompatActivity() {
 

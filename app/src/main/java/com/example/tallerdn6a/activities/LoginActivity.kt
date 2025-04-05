@@ -1,17 +1,15 @@
-package com.example.tallerdn6a
+package com.example.tallerdn6a.activities
 
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
-import android.text.InputType
-import android.util.Log
-import android.view.MotionEvent
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.tallerdn6a.R
 
 class LoginActivity : AppCompatActivity() {
 
@@ -23,7 +21,6 @@ class LoginActivity : AppCompatActivity() {
 
     private lateinit var sharedPreferences: SharedPreferences
 
-    @SuppressLint("ClickableViewAccessibility")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
@@ -40,7 +37,7 @@ class LoginActivity : AppCompatActivity() {
             if (validarCamposLogin()) {
                 Toast.makeText(this,"Ingreso Concedido. Bienvenido!", Toast.LENGTH_SHORT).show()
 
-                val intent = Intent(this,ProfileActivity::class.java)
+                val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
                 finish()
             }

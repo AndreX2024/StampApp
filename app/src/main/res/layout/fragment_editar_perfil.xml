@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blue"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Imagen de perfil -->
+        <ImageView
+            android:id="@+id/imgEditarPerfil"
+            style="@style/ImageProfile"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/user_profile" />
+
+        <Button
+            android:id="@+id/btnCambiarFoto"
+            style="@style/ButtonRounded"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:fontFamily="@font/annapurna_sil"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingTop="2dp"
+            android:layout_marginTop="5dp"
+            android:text="Cambiar Foto"
+            android:textAlignment="center"
+            android:textColor="@color/dark_blue"
+            android:textSize="25sp" />
+
+        <!-- Campos de texto -->
+        <EditText
+            android:id="@+id/et_username_edit_profile"
+            style="@style/EditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:fontFamily="@font/annapurna_sil"
+            android:hint="@string/placeholder_name"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_userlastname_edit_profile"
+            style="@style/EditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="text"
+            android:fontFamily="@font/annapurna_sil"
+            android:hint="@string/placeholder_lastname"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/et_email_edit_profile"
+            style="@style/EditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:fontFamily="@font/annapurna_sil"
+            android:hint="@string/placeholder_email"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/et_phone_edit_profile"
+            style="@style/EditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:fontFamily="@font/annapurna_sil"
+            android:hint="@string/placeholder_telefono"
+            android:inputType="phone" />
+
+        <!-- Botón de Guardar -->
+        <Button
+            android:id="@+id/btnGuardarCambios"
+            style="@style/ButtonRounded"
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/annapurna_sil"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingTop="2dp"
+            android:text="@string/guardar_cambios_perfil"
+            android:textAlignment="center"
+            android:textColor="@color/dark_blue"
+            android:textSize="34sp"/>
+    </LinearLayout>
+</ScrollView>
